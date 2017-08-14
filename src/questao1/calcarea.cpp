@@ -22,7 +22,7 @@ void dadosAreaTriangulo(float lado){
 	cout << "Digite o valor do lado: ";
 	cin >> lado;
 	if(lado <= 0){
-		cout << "A Medida do lado do triangulo eh invalida!" << endl;
+		cout << "A medida do lado do triangulo eh invalida!" << endl;
 		return;
 	} 
 	float altura = (lado/2) * sqrt(3);
@@ -43,13 +43,13 @@ void dadosAreaRetangulo(float base, float altura){
 	cout << "Digite o valor da base: ";
 	cin >> base;
 	if(base <= 0) {
-		cout << "A Medida da base do retangulo eh invalida!" << endl;
+		cout << "A medida da base do retangulo eh invalida!" << endl;
 		return;
 	}
 	cout << "Digite o valor da altura: ";
 	cin >> altura;
 	if(altura <= 0) {
-		cout << "A Medida da altura do retangulo eh invalida!" << endl;
+		cout << "A medida da altura do retangulo eh invalida!" << endl;
 		return;
 	}
 	cout << "O valor da area do retangulo eh = " << areaRetangulo(base, altura) << endl;
@@ -70,7 +70,7 @@ void dadosAreaQuadrado(float lado){
 	cout << "Digite o valor do lado: ";
 	cin >> lado;
 	if(lado <= 0) {
-		cout << "A Medida do lado do quadrado eh invalida!" << endl;
+		cout << "A medida do lado do quadrado eh invalida!" << endl;
 		return;
 	}
 	cout << "O valor da area do quadrado eh = " << areaQuadrado(lado) << endl;
@@ -89,7 +89,7 @@ void dadosAreaCirculo(float raio){
 	cout << "Digite o valor do raio: ";
 	cin >> raio;
 	if(raio <= 0) {
-		cout << "A Medida do raio do circulo eh invalida!" << endl;
+		cout << "A medida do raio do circulo eh invalida!" << endl;
 		return;
 	}
 	cout << "O valor da area do circulo eh = " << areaCirculo(raio) << endl;
@@ -110,13 +110,13 @@ void dadosAreaPiramide(float area_b, float area_f){
 	cout << "Digite o valor da area da base: ";
 	cin >> area_b;
 	if(area_b <= 0) {
-		cout << "A Medida da area da base do piramide eh invalida!" << endl;
+		cout << "A medida da area da base da piramide eh invalida!" << endl;
 		return;
 	} 
 	cout << "Digite o valor da area de uma face da piramide: ";
 	cin >> area_f;
 	if(area_f <= 0) {
-		cout << "A Medida da area da face do piramide eh invalida!" << endl;
+		cout << "A medida da area da face da piramide eh invalida!" << endl;
 		return;
 	} 
 	area_f *= 4;
@@ -136,7 +136,7 @@ void dadosAreaCubo(float aresta){
 	cout << "Digite o valor do aresta: ";
 	cin >> aresta;
 	if(aresta <= 0) {
-		cout << "A Medida da aresta do cubo eh invalida!" << endl;
+		cout << "A medida da aresta do cubo eh invalida!" << endl;
 		return;
 	}
 	cout << "O valor da area do cubo eh = " << areaCubo(aresta) << endl;
@@ -157,22 +157,22 @@ void dadosAreaParalelepipedo(float aresta1, float aresta2, float aresta3){
 	cout << "Digite o valor da primeira aresta: ";
 	cin >> aresta1;
 	if(aresta1 <= 0) {
-		cout << "A Medida da aresta1 do paralelepipedo eh invalida!" << endl;
+		cout << "A medida da aresta1 do paralelepipedo eh invalida!" << endl;
 		return;
 	}
 	cout << "Digite o valor da segunda aresta: ";
 	cin >> aresta2;
 	if(aresta2 <= 0) {
-		cout << "A Medida da aresta2 do paralelepipedo eh invalida!" << endl;
+		cout << "A medida da aresta2 do paralelepipedo eh invalida!" << endl;
 		return;
 	}
 	cout << "Digite o valor da terceira aresta: ";
 	cin >> aresta3;
 	if(aresta3 <= 0) {
-		cout << "A Medida da aresta3 do paralelepipedo eh invalida!" << endl;
+		cout << "A medida da aresta3 do paralelepipedo eh invalida!" << endl;
 		return;
 	}
-	cout << "O valor da area do paralepipedo eh: " << areaParalelepipedo(aresta1, aresta2, aresta3) << endl;
+	cout << "O valor da area do paralepipedo eh = " << areaParalelepipedo(aresta1, aresta2, aresta3) << endl;
 	cout << endl;
 }
 
@@ -188,9 +188,9 @@ void dadosAreaEsfera(float raio) {
 	cout << "Digite o valor do raio: ";
 	cin >> raio;
 	if(raio <= 0) {
-		cout << "A Medida do raio da esfera eh invalida!" << endl;
+		cout << "A medida do raio da esfera eh invalida!" << endl;
 		return;
 	}
-	cout << "O valor da area da esfera eh: " << areaEsfera(raio) << endl;
+	cout << "O valor da area da esfera eh = " << areaEsfera(raio) << endl;
 	cout << endl;
 }

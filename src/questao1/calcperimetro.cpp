@@ -3,8 +3,8 @@
  * @brief	Arquivo corpo com a implementacao das funcoes que solicita 
  *   				ao usuario os dados para o calculo do perimetro de figuras planas
  * @author	Lael Rodrigues(laelrodrigues7@gmail.com)
- * @since	12/03/2017
- * @date 	12/03/2017
+ * @since	13/08/2017
+ * @date 	13/08/2017
  * @sa 		calcperimetro.h
  */
 
@@ -23,10 +23,10 @@ void dadosPeriTriangulo(float lado){
 	cout << "Digite o valor do lado: ";
 	cin >> lado;
 	if(lado <= 0) {
-		cout << "A Medida do lado do triangulo eh invalida!" << endl;
+		cout << "A medida do lado do triangulo eh invalida!" << endl;
 		return;
 	}
-	cout << "O valor do perimetro do triangulo eh: " << periTriangulo(lado) << endl;
+	cout << "O valor do perimetro do triangulo eh = " << periTriangulo(lado) << endl;
 	cout << endl;
 }
 
@@ -42,16 +42,16 @@ void dadosPeriRetangulo(float base, float altura){
 	cout << "Digite o valor da base: ";
 	cin >> base;
 	if(base <= 0) {
-		cout << "A Medida da base do retangulo eh invalida!" << endl;
+		cout << "A medida da base do retangulo eh invalida!" << endl;
 		return;
 	}
 	cout << "Digite o valor da altura: ";
 	cin >> altura;
 	if(altura <= 0) {
-		cout << "A Medida da altura do retangulo eh invalida!" << endl;
+		cout << "A medida da altura do retangulo eh invalida!" << endl;
 		return;
 	}
-	cout << "O valor do perimetro do retangulo eh: " << periRetangulo(base, altura) << endl;
+	cout << "O valor do perimetro do retangulo eh = " << periRetangulo(base, altura) << endl;
 	cout << endl;
 
 }
@@ -68,10 +68,10 @@ void dadosPeriQuadrado(float lado){
 	cout << "Digite o valor do lado: ";
 	cin >> lado;
 	if(lado <= 0) {
-		cout << "A Medida do lado do quadrado eh invalida!" << endl;
+		cout << "A medida do lado do quadrado eh invalida!" << endl;
 		return;
 	}
-	cout << "O valor do perimetro do quadrado eh: " << periQuadrado(lado) << endl;
+	cout << "O valor do perimetro do quadrado eh = " << periQuadrado(lado) << endl;
 	cout << endl;
 }
 
@@ -87,10 +87,10 @@ void dadosPeriCirculo(float raio){
 	cout << "Digite o valor do raio: ";
 	cin >> raio;
 	if(raio <= 0) {
-		cout << "A Medida do raio do circulo eh invalida!" << endl;
+		cout << "A medida do raio do circulo eh invalida!" << endl;
 		return;
 	}
-	cout << "O valor do perimetro do circulo eh: " << periCirculo(raio) << endl;
+	cout << "O valor do perimetro do circulo eh = " << periCirculo(raio) << endl;
 	cout << endl;
 
 }
