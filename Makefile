@@ -11,18 +11,19 @@ BIN_DIR=./bin
 DOC_DIR=./doc
 TEST_DIR=./test
  
-CFLAGS=-Wall -pedantic -ansi -std=c++11 -I. -I$(INC_DIR)
+CFLAGS=-Wall -pg -pedantic -ansi -std=c++11 -I. -I$(INC_DIR)
 
 .PHONY: all clean doxy debug doc 
 
 
-all: init questao1
+all: init questao1 questao2
 
 debug: CFLAGS += -g -O0
 debug: all
 
 init:
 	@mkdir -p $(OBJ_DIR)/questao1
+	@mkdir -p $(OBJ_DIR)/questao2
 	@mkdir -p $(BIN_DIR)
 
 questao1: CFLAGS+= -I$(INC_DIR)/questao1
@@ -52,6 +53,24 @@ $(OBJ_DIR)/questao1/calcvolume.o: $(SRC_DIR)/questao1/calcvolume.cpp $(INC_DIR)/
 	$(CC) -c $(CFLAGS) -o $@ $<
 
 $(OBJ_DIR)/questao1/main.o: $(SRC_DIR)/questao1/main.cpp
+	$(CC) -c $(CFLAGS) -o $@ $<
+
+questao2: CFLAGS+= -I$(INC_DIR)/questao2
+questao2: $(OBJ_DIR)/questao2/fatorial.o $(OBJ_DIR)/questao2/primalidade.o $(OBJ_DIR)/questao2/main.o
+	@echo "============="
+	@echo "Ligando o alvo $@"
+	@echo "============="
+	$(CC) $(CFLAGS) -o $(BIN_DIR)/$@ $^
+	@echo "+++ [Executavel 'questao2' criado em $(BIN_DIR)] +++"
+	@echo "============="
+
+$(OBJ_DIR)/questao2/fatorial.o: $(SRC_DIR)/questao2/fatorial.cpp $(INC_DIR)/questao2/fatorial.h
+	$(CC) -c $(CFLAGS) -o $@ $<
+
+$(OBJ_DIR)/questao2/primalidade.o: $(SRC_DIR)/questao2/primalidade.cpp $(INC_DIR)/questao2/primalidade.h
+	$(CC) -c $(CFLAGS) -o $@ $<
+
+$(OBJ_DIR)/questao2/main.o: $(SRC_DIR)/questao2/main.cpp
 	$(CC) -c $(CFLAGS) -o $@ $<
 
 doxy:
