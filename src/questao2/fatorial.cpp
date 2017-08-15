@@ -12,7 +12,7 @@
 
 /**
  * @brief Funcao que calcula o fatorial de um numero
- * @param valor Numero no qual tera seu fatorial calculado
+ * @param valor Numero que tera seu fatorial calculado
  * @return Fatorial do numero
  */
 int fatorial(int valor) {

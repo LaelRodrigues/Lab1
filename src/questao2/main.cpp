@@ -3,8 +3,8 @@
  * @brief   arquivo corpo de teste das funcoes para calcular o fatorial
  * 					de um numero e o maior primo anterior a um dado numero
  * @author	Lael Rodrigues(laelrodrigues7@gmail.com)
- * @since	12/03/2017
- * @date	12/03/2017
+ * @since	14/08/2017
+ * @date	15/08/2017
  */
 #include <iostream>
 using std::cout;

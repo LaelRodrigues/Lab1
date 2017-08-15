@@ -1,5 +1,5 @@
 /** 
- * @file	fatorial.h
+ * @file	primalidade.h
  * @brief	Arquivo cabecalho com os prototipo da funcao que
  					calcula maior primo anterior a um dado numero
  * @author	Lael Rodrigues(laelrodrigues7@gmail.com)

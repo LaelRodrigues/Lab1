@@ -1,5 +1,5 @@
 /** 
- * @file	fatorial.h
+ * @file	primalidade.cpp
  * @brief	Arquivo corpo com a implementacao da funcao que
  					calcula maior primo anterior a um dado numero
  * @author	Lael Rodrigues(laelrodrigues7@gmail.com)
@@ -14,7 +14,7 @@
  * @brief Funcao que calcula o maior primo anterior a um dado
  *				numero
  * @param valor Numero que tera o maior primo anterior a ele calculado
- * @param i Varialvel auxiliar para testar a primalidade do numero 
+ * @param i Variavel auxiliar para testar a primalidade do numero 
  * @return O maior primo
  */
 int maiorPrimo(int valor, int i){
