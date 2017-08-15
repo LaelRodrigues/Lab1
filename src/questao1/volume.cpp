@@ -17,7 +17,7 @@
  * @return Volume da piramide
  */
 float volPiramide(float area_b, float altura){
-	return 1/3 * area_b * altura; 
+	return area_b * altura * 1/3; 
 }
 
 

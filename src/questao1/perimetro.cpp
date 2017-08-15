@@ -16,7 +16,7 @@
  * @return Perimetro do triangulo
  */
 float periTriangulo(float lado){
-	return 3 * lado;
+	return 3.0 * lado;
 }
 
 
@@ -27,7 +27,7 @@ float periTriangulo(float lado){
  * @return Perimetro do retangulo
  */
 float periRetangulo(float base, float altura){
-	return 2 * (base + altura);
+	return 2.0 * (base + altura);
 }
 
 /**
@@ -36,7 +36,7 @@ float periRetangulo(float base, float altura){
  * @return Perimetro do quadrado
  */
 float periQuadrado(float lado){
-	return 4 * lado;
+	return 4.0 * lado;
 }
 
 
@@ -46,5 +46,5 @@ float periQuadrado(float lado){
   * @return Perimetro do circulo
   */
 float periCirculo(float raio){
-	return 2 * PI * raio;
+	return 2.0 * PI * raio;
 }

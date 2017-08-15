@@ -13,10 +13,6 @@
 #include "calcarea.h"
 #include "calcperimetro.h"
 #include "calcvolume.h"
-#include "area.h"
-#include "perimetro.h"
-#include "volume.h"
-
 
 /**
  * @brief	funcao principal
@@ -100,6 +96,7 @@ int main(){
 				return 0;
 
 			default:
+				cout << endl;
 				cout << "Valor invalido!!" << endl;
 			break;
 		}

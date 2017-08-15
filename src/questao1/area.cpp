@@ -18,7 +18,7 @@
  * @return Area do triangulo
  */
 float areaTriangulo(float base, float altura) {
- 	return (base * altura) / 2;
+ 	return (base * altura) / 2.0;
 }
 
 
@@ -70,7 +70,7 @@ float areaPiramide(float area_b, float area_f){
  * @return Area do cubo
  */
 float areaCubo(float aresta){
-	return 6 * aresta * aresta;
+	return 6.0 * aresta * aresta;
 }
 
 
@@ -82,7 +82,7 @@ float areaCubo(float aresta){
  * @return Area do paralelepipedo
  */
 float areaParalelepipedo(float aresta1, float aresta2, float aresta3){
-	return (2 * aresta1 * aresta2) + (2 * aresta1 * aresta3) + (2 * aresta2 * aresta3); 
+	return (2.0 * aresta1 * aresta2) + (2.0 * aresta1 * aresta3) + (2.0 * aresta2 * aresta3); 
 }
 
 
@@ -92,6 +92,6 @@ float areaParalelepipedo(float aresta1, float aresta2, float aresta3){
  * @return Area da esfera
  */
 float areaEsfera(float raio){
-	return 4 * PI * raio * raio;
+	return 4.0 * PI * raio * raio;
 }
 
