@@ -1,0 +1,13 @@
+funcX:
+Na primeira função(a FuncX) os valores das variáveis arg1 e arg2 não são modificados, pois os paramentros foram passados por valor, ou seja, apenas uma copia dos valores é passada para função, dessa forma, não alterando os valores das variáveis.
+arg1 = 11 e arg2 = 23.
+
+funcY:
+Na segunda função(a funcY), no primeiro argumento é passado a referência da variável arg1, assim, o valor da mesma poderia ser alterado, entretanto na função só é feita uma copia do valor da variável para outra, sem alterá-la, no segundo argumento é passado o valor da variável arg2, desse modo, não podendo modificado.
+arg1 = 11 e arg2 = 23.
+
+funcZ: 
+Na teceira função(a funcZ) como na primeira(a funcX) os valores de arg1 e arg2 são passados por valor, logo seu valores não serão modificados.
+arg1 = 11 e arg2 = 23.
+
+

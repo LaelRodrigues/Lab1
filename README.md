@@ -6,4 +6,7 @@ Matricula: 20150146760
 
 Compilação: Digite 'make' no diretorio raiz da atividade.
 
-execução:./bin/questao(1 ou 2).
+execução:
+	
+	-Questao1: ./bin/questao1
+	-Questao2: ./bin/questao2
