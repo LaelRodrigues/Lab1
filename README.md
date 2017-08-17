@@ -1,4 +1,4 @@
-				Laboratório de programção 1
+				Laboratório de programação 1
  
 Aluno: Robson Lael de Melo Rodrigues
 
